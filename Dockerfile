@@ -28,9 +28,6 @@ COPY . .
 # Install PHP dependencies
 RUN composer install --no-dev --optimize-autoloader
 
-# Install Node.js deps (opsional)
-RUN npm ci
-
 # Copy & give permission to build script
 COPY ./build-app.sh /app/build-app.sh
 RUN chmod +x /app/build-app.sh && ./build-app.sh
