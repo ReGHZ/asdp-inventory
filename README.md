@@ -93,7 +93,7 @@ php artisan storage:link
 php artisan serve
 ```
 
-🔧 Login Default (Demo)
+## 🔧 Login Default (Demo)
 
 Admin:
 
@@ -101,7 +101,7 @@ Admin:
 
     Password: 123456
 
-🐳 Docker Development
+## 🐳 Docker Development
 
 Untuk development menggunakan Docker:
 
@@ -110,8 +110,9 @@ docker-compose up -d --build
 
 ```
 
-Aplikasi akan berjalan di: http://localhost:8080
-📦 Struktur Proyek
+## 📦 Struktur Proyek
+
+Aplikasi akan berjalan di: http://localhost:8100 (Docker)
 
 ```
 asdp-inventory/
@@ -126,7 +127,7 @@ asdp-inventory/
 └── tests/            # Unit testing
 ```
 
-🤝 Kontribusi
+## 🤝 Kontribusi
 
 Kontribusi terbuka melalui:
 
@@ -140,13 +141,16 @@ Kontribusi terbuka melalui:
 
     Buat Pull Request
 
-📜 Lisensi
+## 📜 Lisensi
 
-Proyek ini dilisensikan dibawah MIT License.
-✉️ Kontak
+Proyek ini dilisensikan di bawah [MIT License](https://opensource.org/licenses/MIT).
 
-    Developer: ReGHZ
+---
 
-```
+## ✉️ Kontak
 
-```
+**Developer:**
+
+-   ReGHZ – [github.com/reghz](https://github.com/reghz)
+-   Hilmi bakhtiar - [github.com/HILMIBAKHTIAR](https://github.com/HILMIBAKHTIAR)
+-   samcz054 [github.com/samcz054](https://github.com/samcz054)
