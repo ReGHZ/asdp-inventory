@@ -152,5 +152,5 @@ Proyek ini dilisensikan di bawah [MIT License](https://opensource.org/licenses/M
 **Developer:**
 
 -   ReGHZ – [github.com/reghz](https://github.com/reghz)
--   Hilmi bakhtiar - [github.com/HILMIBAKHTIAR](https://github.com/HILMIBAKHTIAR)
--   samcz054 [github.com/samcz054](https://github.com/samcz054)
+-   Hilmi bakhtiar – [github.com/HILMIBAKHTIAR](https://github.com/HILMIBAKHTIAR)
+-   samcz054 – [github.com/samcz054](https://github.com/samcz054)
