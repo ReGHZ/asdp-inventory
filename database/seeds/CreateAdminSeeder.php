@@ -17,15 +17,25 @@ class CreateAdminSeeder extends Seeder
      */
     public function run()
     {
-        $user = User::create([
+           // Cek atau buat user admin
+        $user = \App\Models\User::firstOrCreate(
+        ['email' => 'admin@asdp.com'],
+        [
             'name' => 'admin',
-            'email' => 'admin@gmail.com',
             'password' => bcrypt('123456'),
-        ]);
+        ]
+        );
 
-        $role = Role::create(['name' => 'admin']);
+        // Cek atau buat role admin
+        $role = Role::firstOrCreate(['name' => 'admin']);
+
+        // Ambil semua permission & assign ke role
         $permissions = Permission::pluck('id', 'id')->all();
         $role->syncPermissions($permissions);
-        $user->assignRole([$role->id]);
+
+        // Assign role ke user kalau belum ada
+        if (!$user->hasRole($role->name)) {
+        $user->assignRole($role);
+        }
     }
 }

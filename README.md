@@ -39,14 +39,13 @@ git clone https://github.com/ReGHZ/asdp-inventory.git
 cd asdp-inventory
 ```
 
-2. Install Dependensi
+### 2. Install Dependensi
 
 ```bash
 composer install
-npm install && npm run dev
 ```
 
-3. Konfigurasi Environment
+### 3. Konfigurasi Environment
 
 Salin file environment:
 
@@ -79,7 +78,7 @@ DB_ROOT_PASSWORD=your_root_password
 DB_VOLUME=asdp_mysql_data
 ```
 
-4. Setup Aplikasi
+### 4. Setup Aplikasi
 
 ```bash
 php artisan key:generate
@@ -88,26 +87,19 @@ php artisan storage:link
 
 ```
 
-5. Jalankan Aplikasi
+### 5. Jalankan Aplikasi
 
 ```bash
 php artisan serve
 ```
 
-Akses aplikasi di: http://localhost:8000
-🔧 Login Default
+🔧 Login Default (Demo)
 
 Admin:
 
     Email: admin@asdp.com
 
-    Password: password
-
-User:
-
-    Email: user@asdp.com
-
-    Password: password
+    Password: 123456
 
 🐳 Docker Development
 
@@ -154,23 +146,6 @@ Proyek ini dilisensikan dibawah MIT License.
 ✉️ Kontak
 
     Developer: ReGHZ
-
-    Email: your-email@example.com
-
-```
-Key improvements from your example:
-
-1. Updated for Laravel 8 specifically
-2. Added inventory-specific features
-3. Included default login credentials
-4. Added project structure visualization
-5. More detailed contribution guide
-6. Better organized prerequisite section
-7. Added contact information section
-
-```
-
-The README maintains all the good elements from your example while being customized for an inventory management system.
 
 ```
 
