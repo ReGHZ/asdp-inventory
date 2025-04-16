@@ -82,7 +82,8 @@ DB_VOLUME=asdp_mysql_data
 
 ```bash
 php artisan key:generate
-php artisan migrate --seed
+php artisan db:seed --class=PermissionTableSeeder
+php artisan db:seed --class=CreateAdminSeeder
 php artisan storage:link
 
 ```
