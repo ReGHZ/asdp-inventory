@@ -81,9 +81,11 @@ DB_VOLUME=asdp_mysql_data
 ### 4. Setup Aplikasi
 
 ```bash
+php artisan migrate
 php artisan key:generate
-php artisan migrate --seed
-php artisan storage:link
+composer dump-autoload
+php artisan db:seed --class=PermissionTableSeeder
+php artisan db:seed --class=CreateAdminSeeder
 
 ```
 
