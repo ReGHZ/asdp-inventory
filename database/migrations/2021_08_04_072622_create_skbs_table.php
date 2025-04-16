@@ -14,7 +14,7 @@ class CreateSkbsTable extends Migration
     public function up()
     {
         Schema::create('skbs', function (Blueprint $table) {
-            $table->id()->nullable();
+            $table->id(); // <-- FIXED
             $table->unsignedBigInteger('user_id');
             $table->unsignedBigInteger('sp2bj_id');
             $table->unsignedBigInteger('ttd1');
@@ -28,6 +28,7 @@ class CreateSkbsTable extends Migration
             $table->foreign('sp2bj_id')->references('id')->on('sppbjs')->onDelete('cascade')->onUpdate('cascade');
             $table->timestamps();
         });
+        
     }
 
     /**
