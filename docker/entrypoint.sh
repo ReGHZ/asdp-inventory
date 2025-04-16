@@ -24,4 +24,4 @@ php artisan db:seed --class=PermissionTableSeeder --force || exit 1
 php artisan db:seed --class=CreateAdminSeeder --force || exit 1
 
 # Jalankan Laravel dev server
-php artisan serve --host=0.0.0.0 --port=8000
+php artisan serve --host=0.0.0.0 --port=8100
