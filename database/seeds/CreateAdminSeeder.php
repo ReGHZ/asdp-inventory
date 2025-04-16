@@ -18,7 +18,7 @@ class CreateAdminSeeder extends Seeder
     public function run()
     {
            // Cek atau buat user admin
-        $user = \App\Models\User::firstOrCreate(
+        $user = User::firstOrCreate(
         ['email' => 'admin@asdp.com'],
         [
             'name' => 'admin',
